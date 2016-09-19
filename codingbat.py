@@ -32,3 +32,14 @@ print "--"
 print extra_end('Hello') # 'lololo'
 print extra_end('ab') # 'ababab'
 print extra_end('Hi') # 'HiHiHi'
+
+def first_two(str):
+    if len(str) < 2:
+        return str
+    return str[:2]
+
+print "--"
+print first_two('Hello') # 'He'
+print first_two('abcdefg') # 'ab'
+print first_two('ab') # 'ab'
+print first_two('a') # 'a'
