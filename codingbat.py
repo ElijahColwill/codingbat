@@ -10,3 +10,9 @@ def make_abba(a, b):
 
 print "--"
 print make_abba("Hi", "Bye")
+
+def make_tags(tag, word):
+    return "<" + tag + ">" + word + "</" + tag + ">"
+
+print "--"
+print make_tags("i", "Yay")
