@@ -61,3 +61,13 @@ print "--"
 print without_end('Hello') # 'ell'
 print without_end('java') # 'av'
 print without_end('coding') # 'odin'
+
+def combo_string(a, b):
+    if len(a) < len(b):
+        return a + b + a
+    else: return b + a + b
+
+print "--"
+print combo_string('Hello', 'hi') # 'hiHellohi'
+print combo_string('hi', 'Hello') # 'hiHellohi'
+print combo_string('aaa', 'b') # 'baaab'
