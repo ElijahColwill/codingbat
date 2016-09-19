@@ -52,3 +52,12 @@ print "--"
 print first_half('WooHoo') # 'Woo'
 print first_half('HelloThere') # 'Hello'
 print first_half('abcdef') # 'abc'
+
+def without_end(str):
+    str2 = str[1:]
+    return str2[:-1]
+
+print "--"
+print without_end('Hello') # 'ell'
+print without_end('java') # 'av'
+print without_end('coding') # 'odin'
