@@ -101,3 +101,15 @@ print "--"
 print double_char('The') # 'TThhee'
 print double_char('AAbb') # 'AAAAbbbb'
 print double_char('Hi-There') # 'HHii--TThheerree'
+
+def count_hi(str):
+    result = 0
+    for char in range(len(str)-1):
+        if str[char:char+2] == 'hi':
+            result += 1
+    return result
+
+print "--"
+print count_hi('abc hi ho') # 1
+print count_hi('ABChi hi') # 2
+print count_hi('hihi') # 2
