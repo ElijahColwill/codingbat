@@ -79,3 +79,12 @@ print "--"
 print non_start('Hello', 'There') # 'ellohere'
 print non_start('java', 'code') # 'avaode'
 print non_start('shotl', 'java') # 'hotlava'
+
+def left2(str):
+    str2 = str[:2]
+    return str[2:] + str2
+
+print "--"
+print left2('Hello') # 'lloHe'
+print left2('java') # 'vaja'
+print left2('Hi') # 'Hi'
