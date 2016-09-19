@@ -71,3 +71,11 @@ print "--"
 print combo_string('Hello', 'hi') # 'hiHellohi'
 print combo_string('hi', 'Hello') # 'hiHellohi'
 print combo_string('aaa', 'b') # 'baaab'
+
+def non_start(a, b):
+    return a[1:] + b[1:]
+
+print "--"
+print non_start('Hello', 'There') # 'ellohere'
+print non_start('java', 'code') # 'avaode'
+print non_start('shotl', 'java') # 'hotlava'
