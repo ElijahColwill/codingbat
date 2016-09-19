@@ -43,3 +43,12 @@ print first_two('Hello') # 'He'
 print first_two('abcdefg') # 'ab'
 print first_two('ab') # 'ab'
 print first_two('a') # 'a'
+
+def first_half(str):
+    half = (len(str) / 2)
+    return str[:half]
+
+print "--"
+print first_half('WooHoo') # 'Woo'
+print first_half('HelloThere') # 'Hello'
+print first_half('abcdef') # 'abc'
