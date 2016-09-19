@@ -24,3 +24,11 @@ print "--"
 print make_out_word('<<>>', 'Yay') # '<<Yay>>
 print make_out_word('<<>>', 'WooHoo') # '<<WooHoo>>'
 print make_out_word('[[]]', 'word') # '[[word]]'
+
+def extra_end(str):
+    return (str[-2:] * 3)
+
+print "--"
+print extra_end('Hello') # 'lololo'
+print extra_end('ab') # 'ababab'
+print extra_end('Hi') # 'HiHiHi'
