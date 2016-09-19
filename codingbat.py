@@ -88,3 +88,16 @@ print "--"
 print left2('Hello') # 'lloHe'
 print left2('java') # 'vaja'
 print left2('Hi') # 'Hi'
+
+#STRING 2
+
+def double_char(str):
+    result = ''
+    for char in str:
+        result += char * 2
+    return result
+
+print "--"
+print double_char('The') # 'TThhee'
+print double_char('AAbb') # 'AAAAbbbb'
+print double_char('Hi-There') # 'HHii--TThheerree'
