@@ -113,3 +113,18 @@ print "--"
 print count_hi('abc hi ho') # 1
 print count_hi('ABChi hi') # 2
 print count_hi('hihi') # 2
+
+def cat_dog(str):
+    cat = 0
+    dog = 0
+    for char in range(len(str)-1):
+        if str[char:char+3] == 'cat':
+            cat += 1
+        if str[char:char+3] == 'dog':
+            dog += 1
+    return cat == dog
+
+print "--"
+print cat_dog('catdog') # True
+print cat_dog('catcat') # False
+print cat_dog('1cat1cadodog') # True
