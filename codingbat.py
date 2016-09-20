@@ -128,3 +128,16 @@ print "--"
 print cat_dog('catdog') # True
 print cat_dog('catcat') # False
 print cat_dog('1cat1cadodog') # True
+
+def count_code(str):
+    result = 0
+    for char in range(len(str) - 3):
+        if str[char:char+2] == 'co':
+            if str[char+3] == 'e':
+                result += 1
+    return result
+
+print "--"
+print count_code('aaacodebbb') # 1
+print count_code('codexxcode') # 2
+print count_code('cozexxcope') # 2
