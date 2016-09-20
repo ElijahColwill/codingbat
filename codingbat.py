@@ -141,3 +141,13 @@ print "--"
 print count_code('aaacodebbb') # 1
 print count_code('codexxcode') # 2
 print count_code('cozexxcope') # 2
+
+def end_other(a, b):
+    a = a.lower(a)
+    b = b.lower(b)
+    return a.endswith(b) or b.endswith(a)
+
+print "--"
+print end_other('Hiabc', 'abc') # True
+print end_other('AbC', 'HiaBc') # True
+print end_other('abc', 'abXabc') # True
