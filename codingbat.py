@@ -151,3 +151,18 @@ print "--"
 print end_other('Hiabc', 'abc') # True
 print end_other('AbC', 'HiaBc') # True
 print end_other('abc', 'abXabc') # True
+
+def xyz_there(str):
+    xyzcount = 0
+    xyz1count = 0
+    for n in range(len(str)):
+        if str[n:n+3] == 'xyz':
+          xyzcount += 1
+        if str[n:n+4] == '.xyz':
+          xyz1count += 1
+    return (xyzcount - xyz1count) > 0
+
+print "--"
+print xyz_there('abcxyz') # True
+print xyz_there('abc.xyz') # False
+print xyz_there('xyz.abc') # True
