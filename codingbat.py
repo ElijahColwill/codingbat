@@ -143,8 +143,8 @@ print count_code('codexxcode') # 2
 print count_code('cozexxcope') # 2
 
 def end_other(a, b):
-    a = a.lower(a)
-    b = b.lower(b)
+    a = a.lower()
+    b = b.lower()
     return a.endswith(b) or b.endswith(a)
 
 print "--"
@@ -218,3 +218,11 @@ print "--"
 print sum3([1, 2, 3]) # 6
 print sum3([5, 11, 2]) # 18
 print sum3([7, 0, 0]) # 7
+
+def rotate_left3(nums):
+   return [nums[1], nums[2], nums[0]]
+
+print "--"
+print rotate_left3([1, 2, 3]) # [2, 3, 1]
+print rotate_left3([5, 11, 9]) # [11, 9, 5]
+print rotate_left3([7, 0, 0]) # [0, 0, 7]
