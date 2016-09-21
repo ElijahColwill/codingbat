@@ -277,3 +277,13 @@ print "--"
 print make_ends([1, 2, 3]) # [1, 3]
 print make_ends([1, 2, 3, 4]) # [1, 4]
 print make_ends([7, 4, 6, 2]) # [7, 2]
+
+def has23(nums):
+    return 2 in nums or 3 in nums
+
+print "--"
+print has23([2, 5]) # True
+print has23([4, 3]) # True
+print has23([4, 5]) # False
+
+# LIST 2
