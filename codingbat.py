@@ -269,3 +269,11 @@ print "--"
 print middle_way([1, 2, 3], [4, 5, 6]) # [2, 5]
 print middle_way([7, 7, 7], [3, 8, 0]) # [7, 8]
 print middle_way([5, 2, 9], [1, 4, 5]) # [2, 4]
+
+def make_ends(nums):
+    return [nums[0], nums[-1]]
+
+print "--"
+print make_ends([1, 2, 3]) # [1, 3]
+print make_ends([1, 2, 3, 4]) # [1, 4]
+print make_ends([7, 4, 6, 2]) # [7, 2]
