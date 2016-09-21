@@ -339,3 +339,22 @@ print sum13([1, 2, 2, 1])
 print sum13([1, 1])
 print sum13([1, 2, 2, 1, 13])
 print sum13([1, 2, 2, 1, 13, 13, 13, 13, 1, 2])
+
+def sum67(nums):
+    if len(nums) == 0:
+        return 0
+    startswith6 = False
+    sum = 0
+    for i in nums:
+        if not startswith6:
+            if i == 6:
+                startswith6 = True
+            else: sum += i
+        elif i == 7:
+            startswith6 = False
+    return sum
+
+print "--"
+print sum67([1, 2, 2])
+print sum67([1, 2, 2, 6, 99, 99, 99, 7, 1])
+print sum67([1, 1, 6, 7, 2])
