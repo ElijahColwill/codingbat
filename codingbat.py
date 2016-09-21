@@ -234,3 +234,18 @@ print "--"
 print reverse3([1, 2, 3]) # [3, 2, 1]
 print reverse3([5, 11, 9]) # [9, 11, 5]
 print reverse3([7, 0, 0]) # [0, 0, 7]
+
+def max_end3(nums):
+    final = 0
+    if nums[0] > nums[2]:
+        final += nums[0]
+    else: final += nums[2]
+    nums[0] = final
+    nums[1] = final
+    nums[2] = final
+    return nums
+
+print "--"
+print max_end3([1, 2, 3]) # [3, 3, 3]
+print max_end3([11, 5, 9]) # [11, 11, 11]
+print max_end3([2, 11, 3]) # [3, 3, 3]
