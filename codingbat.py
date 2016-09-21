@@ -307,3 +307,14 @@ print "--"
 print big_diff([10, 3, 5, 6]) # 7
 print big_diff([7, 2, 10, 9]) # 8
 print big_diff([2, 10, 7, 2]) # 8
+
+def centered_average(nums):
+  result = 0
+  for i in nums:
+    result += i
+  return (result - min(nums) - max(nums)) / (len(nums)-2)
+
+print "--"
+print centered_average([1, 2, 3, 4, 100]) # 3
+print centered_average([1, 1, 5, 5, 10, 8, 7]) # 5
+print centered_average([-10, -4, -2, -4, -2, 0]) # -3
