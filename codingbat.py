@@ -318,3 +318,24 @@ print "--"
 print centered_average([1, 2, 3, 4, 100]) # 3
 print centered_average([1, 1, 5, 5, 10, 8, 7]) # 5
 print centered_average([-10, -4, -2, -4, -2, 0]) # -3
+
+def sum13(nums):
+    if len(nums) == 0:
+        return 0
+    skipnext = False
+    sum = 0
+    for i in nums:
+         if i == 13:
+             skipnext = True
+             continue
+         if skipnext:
+             skipnext = False
+             continue
+         else: sum += i
+    return sum
+
+print "--"
+print sum13([1, 2, 2, 1])
+print sum13([1, 1])
+print sum13([1, 2, 2, 1, 13])
+print sum13([1, 2, 2, 1, 13, 13, 13, 13, 1, 2])
