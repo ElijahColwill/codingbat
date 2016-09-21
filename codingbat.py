@@ -192,3 +192,13 @@ print "--"
 print same_first_last([1, 2, 3]) # False
 print same_first_last([1, 2, 3, 1]) # True
 print same_first_last([1, 2, 1]) # True
+
+def make_pi():
+    nums = [0, 1, 2]
+    nums[0] = 3
+    nums[1] = 1
+    nums[2] = 4
+    return nums
+
+print "--"
+print make_pi() # [3, 1, 4]
