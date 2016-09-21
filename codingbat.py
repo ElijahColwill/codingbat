@@ -209,4 +209,12 @@ def common_end(a, b):
 print "--"
 print common_end([1, 2, 3], [7, 3]) # True
 print common_end([1, 2, 3], [7, 3, 2]) # False
-print common_end([1, 2, 3], [1, 3]) # True    
+print common_end([1, 2, 3], [1, 3]) # True
+
+def sum3(nums):
+    return nums[0] + nums[1] + nums[2]
+
+print "--"
+print sum3([1, 2, 3]) # 6
+print sum3([5, 11, 2]) # 18
+print sum3([7, 0, 0]) # 7
