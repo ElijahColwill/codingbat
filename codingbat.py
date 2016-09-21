@@ -358,3 +358,21 @@ print "--"
 print sum67([1, 2, 2])
 print sum67([1, 2, 2, 6, 99, 99, 99, 7, 1])
 print sum67([1, 1, 6, 7, 2])
+
+def has22(nums):
+    nextto2 = False
+    final = False
+    for i in nums:
+        if nextto2:
+            if i == 2:
+                final = True
+            else: nextto2 = False
+        elif not nextto2:
+            if i == 2:
+                nextto2 = True
+    return final == True
+
+print "--"
+print has22([1, 2, 2])
+print has22([1, 2, 1, 2])
+print has22([2, 1, 2])
